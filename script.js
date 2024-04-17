@@ -42,6 +42,7 @@ const questions = [
 ];
 
     const questionElement = document.getElementById("question");
+    const placarElement = document.getElementById("placar");
     const answerButtons = document.getElementById("answer-buttons");
     const nextButton = document.getElementById("next-btn");
 
@@ -101,11 +102,13 @@ function selectAnswer(e){
         button.disabled = true;
     });
     nextButton.style.display = "block";
+    placarElement.innerHTML = `Você acertou ${score} de ${questions.length} perguntas!`; 
 }
 
 function showScore(){
     resetState();
-    questionElement.innerHTML = `Você acertou ${score} de ${questions.length} perguntas!`;
+    questionElement.innerHTML = `Você acertou ${score} de ${questions.length} perguntas!`;  
+    placarElement.innerHTML = '';   
     nextButton.innerHTML = "Reiniciar o Quiz";
     nextButton.style.display = "block";
 }
