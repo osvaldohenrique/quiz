@@ -11,8 +11,5 @@
 ## Author
 Osvaldo Henrique
 
-- Email: osvaldohenrique12@gmail.com
-- GitHub: @osvaldohenrique
-- LinkedIn: @osvaldo-henrique-07m4338
 ## License
 Copyright © 2024 Osvaldo Henrique
